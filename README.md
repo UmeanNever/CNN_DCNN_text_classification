@@ -1,4 +1,6 @@
 # CNN_DCNN_text_classification
+*by Yuming Yang*
+
 This project is to use a CNN-DCNN model to do semi-supervised or supervised binary text classification on Chinese
 text.
 
@@ -81,9 +83,11 @@ python DCNN.py \
 ```
 
 ## Default convolution layer and embedding settings:
+```
 max_length = 20
 max_words = 5000
 embed_size = 300
 filter_size = 300 (number of filters)
 strides = 2
 window_size = 4 (filter shape)
+```
