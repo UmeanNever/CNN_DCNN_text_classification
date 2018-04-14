@@ -4,9 +4,9 @@
 This project is to use a CNN-DCNN model to do semi-supervised or supervised binary text classification on Chinese
 text.
 
-It can be viewed as a Keras based implementation of the classification model in the paper *("Deconvolutional Paragraph
+It can be viewed as a Keras based implementation of the classification model in the paper **("Deconvolutional Paragraph
 Representation Learning" by Yizhe Zhang, Dinghan Shen, Guoyin Wang, Zhe Gan, Ricardo Henao and Lawrence Carin,
-NIPS 2017)*. Note that there are some differences on the layer settings and loss function which make the model easier to
+NIPS 2017)**. Note that there are some differences on the layer settings and loss function which make the model easier to
 train and fit the Chinese text.
 
 I have implemented both a baseline purely CNN model and a semi-supervised CNN_DCNN model, you can separately train and
@@ -21,6 +21,8 @@ text summarization and paragraph reconstruction.
 2. Do predictions on your test text based on your trained model. See usage in test mode.
 3. You can also tune the parameters in the tuning mode. So far, it only supports hidden layer size tuning in CNN. You
 can add more parameters to tune by modifying the function model_evaluate in DCNN.py easily
+
+**(If you just want to see an example, try directly do predictions using my trained model and test data. See Sample Usage for testing for datails)**
 
 ## Usage: 
 ```
