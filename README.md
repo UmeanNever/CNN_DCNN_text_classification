@@ -60,27 +60,27 @@ for training:
 ```
 python DCNN.py \
 -m train \
--i1 C:\\Users\\Umean\\Desktop\\Stratify\\pos.txt \
--i2 C:\\Users\\Umean\\Desktop\\Stratify\\neg.txt \
+-i1 C:\\Users\\Umean\\Desktop\\pos.txt \
+-i2 C:\\Users\\Umean\\Desktop\\neg.txt \
 -mt DCNN \
--o C:\\Users\\Umean\\Desktop\\Stratify\\DCNN_model.h5
+-o C:\\Users\\Umean\\Desktop\\DCNN_model.h5
 ```
 for testing(predicting):
 ```
 python DCNN.py \
 -m test \
--t C:\\Users\\Umean\\Desktop\\Stratify\\test.txt \
+-t C:\\Users\\Umean\\Desktop\\test.txt \
 -a DCNN_model.h5 \
 -mt DCNN \
--o C:\\Users\\Umean\\Desktop\\Stratify\\predictions.txt
+-o C:\\Users\\Umean\\Desktop\\predictions.txt
 ```
 for tuning:
 ```
 python DCNN.py \
 -m tuning \
 -mt DCNN \
--i1 C:\\Users\\Umean\\Desktop\\Stratify\\pos.txt \
--i2 C:\\Users\\Umean\\Desktop\\Stratify\\neg.txt \
+-i1 C:\\Users\\Umean\\Desktop\\pos.txt \
+-i2 C:\\Users\\Umean\\Desktop\\neg.txt \
 -ps [100, 300, 500]
 ```
 
